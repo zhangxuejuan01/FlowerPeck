@@ -1,0 +1,144 @@
+/* 清除浮动 */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.course-content{
+  margin-top: 50rpx;
+}
+.course-banner{
+  height: 410rpx;
+}
+.course-banner .img{
+  width: 750rpx;
+  height: 410rpx;
+  text-align: center;
+}
+.content-top{
+  height: 65rpx;
+  line-height: 65rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.content-title{
+  color: #414141;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.title-inner{
+  width: 370rpx;
+  margin: 0 auto;
+}
+.title-introduce{
+  float: left;
+  width: 60rpx;
+  text-align: center;
+}
+.title-catalog{
+  float: right;
+  width: 60rpx;
+  text-align: center;
+}
+.title_active{
+  border-bottom: 5rpx solid #00a1e9;
+  color: #00a1e9;
+}
+.introduce,.catalog{
+  margin-top: 20rpx;
+}
+.introduce-top{
+  padding: 35rpx 20rpx 25rpx 20rpx;
+  background: #fff;
+}
+.introduce-name{
+  color: #222222;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.introduce-num{
+  color: #a3a3a3;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+.introduce-price{
+  font-size: 32rpx;
+  color: #e6790e;
+}
+.info-free{
+  color: #1abe16;
+}
+.introduce-course{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #fff;
+  font-size: 28rpx;
+}
+.course-title{
+  color: #0c0c0c;
+  font-weight: bold;
+}
+.course-detail{
+  color: #3a3a3a;
+  line-height: 35rpx;
+}
+.catalog-item{
+  font-size: 28rpx;
+  color: #000;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.catalog-item:nth-child(2n){
+  background: #f4f4f4;
+}
+.blank{
+  height: 80rpx;
+}
+.bottom{
+  width:100%;
+  height: 80rpx;
+  position:fixed;
+  left:0;
+  bottom:0;
+  display:flex;
+  box-shadow: 0 -2rpx 10px rgba(0, 0, 0, .2);
+}
+.b-l{
+  color: #686868;
+  background-color: #fff;
+  width:20vw;
+}
+.touch-kf{
+  padding-top: 12rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 35rpx;
+  background-color: #fff;
+}
+button::after{
+border:none;
+}
+.b-l .iconfont{
+  font-size: 40rpx;
+}
+.b-sy{
+  font-size: 24rpx;
+}
+.b-r{
+  flex: 1;
+  background-color: #169bd6;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

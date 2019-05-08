@@ -1,0 +1,30 @@
+.btn-area{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.text{
+  font-size: 30rpx;
+  color: #666;
+  display: block;
+  text-align: center;
+}
+.add{
+  margin-top: 50rpx;
+  background: #800000;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+}
+.remove{
+  margin-top: 20rpx;
+  background: #191970;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+}
+.progress{
+  margin-top: 20rpx;
+}
+.group{
+  margin-top: 50rpx;
+}

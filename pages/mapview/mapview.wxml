@@ -1,0 +1,17 @@
+<!--pages/mapview/mapview.wxml-->
+<view class='info-act act-hr' bindtap='getCurrentLocation'>
+  <text class='info-img iconfont icon-ditu1'></text> 
+  <view class='info-left'>
+      <input placeholder='请选择地址'  placeholder-class='info-input' value="{{ address }}"  disabled='true'></input> 
+    </view>
+</view>
+
+
+  <!-- <view class='info-show' wx:if="{{ address }}">{{ address }}<text  class="go iconfont icon-erji" style="color:#333;font-size:36rpx;"></text></view> -->
+  <view class='info-show' wx:if="{{ address }}" bindtap='showMapLocation' bindlongpress='showTips'>
+    <view class='show-left'>{{ address }}</view>
+    <view class='show-right'><text  class="go iconfont icon-erji" style="color:#008080;font-size:36rpx;"></text></view>
+  </view>
+
+
+

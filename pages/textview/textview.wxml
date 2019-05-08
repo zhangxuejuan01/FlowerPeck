@@ -1,0 +1,26 @@
+<view class="btn-area">
+  <view class="body-view">
+    <text class='text'>{{text}}</text>
+    <button class='add' bindtap="add">add line</button>
+    <button class='remove' bindtap="remove">remove line</button>
+  </view>
+
+  <progress class='progress' percent="20" show-info backgroundColor="blue" />
+  <progress class='progress' percent="40" stroke-width="12" activeColor="red" />
+  <progress class='progress' percent="60" color="pink" />
+  <progress class='progress' percent="80" show-info  active />
+
+    <view class="group">
+      <block wx:for="{{iconSize}}"><icon type="success" size="{{item}}" /></block>
+    </view>
+
+    <view class="group">
+      <block wx:for="{{iconType}}"><icon type="{{item}}" size="38" /></block>
+    </view>
+
+    <view class="group">
+    <block wx:for="{{iconColor}}">
+      <icon type="success" size="40" color="{{item}}" />
+    </block>
+    </view>
+</view>

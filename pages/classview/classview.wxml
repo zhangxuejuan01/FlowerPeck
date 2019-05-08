@@ -1,0 +1,62 @@
+<view class='cate-nav'>
+  <scroll-view scroll-x="true"  class='category' scroll-left="{{scrollLeft}}">
+      <block wx:for="{{ categories }}" wx:for-index="index">
+        <view class="category_item {{currentTab == index ? 'category_active' : ''}}"  data-current="{{index}}"  bindtap="tabClick">{{item.name}}</view>
+    </block>
+  </scroll-view>
+  <!-- 显示更多分类按钮 -->
+   <view class="category_itemMore"  bindtap="tabMore">
+        <text class="iconfont icon-fenlei1" style='font-size:40rpx;'></text>
+    </view>
+</view>
+
+<!-- 展开显示更多分类 -->
+  <view class='showMoreCate' wx-if="{{showMoreCate}}">
+    <view class='moreCate-content'>
+      <text class='more-close iconfont icon-close' style='font-size:40rpx;color:rgba(0,0,0,.5)' bindtap="moreClose"></text>
+      <view class='allCate clearfix'>
+          <block wx:for="{{ categories }}" wx:for-index="index">
+            <view class="allCate_item" data-current="{{index}}"   bindtap="tabClick">{{item.name}}</view>
+          </block>
+      </view>
+    </view>
+  </view>
+
+
+ <!--循环体  -->
+    <view class='category_all'>
+
+      <!-- 全面、免费、付费三类 -->
+      <view class='chargeList'>
+        <block wx:for="{{ chargeList }}">
+              <view class="chargeList_item {{activeChargeId == item.id ? 'charge_active' : ''}}" data-id="{{item.id}}"   bindtap="chargeClick">{{item.name}}</view>
+        </block>
+      </view>
+
+        <view class='courseContent'>
+         <block wx:for="{{ courseList }}" wx:for-index="index">
+            <view class='info_item'  data-index='{{index}}' bindtap='chooseCourse'>
+              <view class='info_itemImg'>
+                <image class='img' src='{{item.pic}}'></image>
+              </view>
+              <view class='info_itemInfo'>
+                  <view class='info_name'>{{item.name}}</view>
+                  <view class='info-bottom'>
+                    <view class='info-price info-free' wx-if="{{item.price == 0 }}">免费</view>
+                    <view class='info-price' wx-if="{{item.price != 0 }}">￥{{item.price}}</view>
+                    <view class='study-num'>{{item.num}}人学习过</view>
+                  </view>
+              </view>
+            </view>
+          </block>
+        </view>
+    </view>
+
+    
+    <view class="com-widget-goTop"  bindtap="goTop" wx:if="{{ show_goTop }}">
+          <view class="icon-gotop">
+            <text class="iconfont icon-arrowup" style="color:#fff;font-size:40rpx;"></text>
+              顶部
+          </view>
+    </view>
+

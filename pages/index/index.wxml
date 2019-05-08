@@ -1,0 +1,123 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index_swiper">
+    <swiper class="swiperImages" indicator-dots="true" autoplay="true" interval="3000" duration="1000">    
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>    
+
+  <!-- 容器 -->
+  <view class="index_container">
+    <view class="title"><text class="iconfont icon-dingwei" style="color:#00BFFF;font-size:30rpx;"></text><text style="padding-left: 15rpx;box-sizing: border-box;">容器</text></view>
+    <view class="index_content">
+      <view class="clearFix">
+      <view class="content_scroll-view index_content_item" bindtap="toScrollView">
+          <text>scroll-view类容器</text>
+        </view>
+        <view class="content_view index_content_item" hover-class="light_blue"  bindtap="toClassView">
+           <text>view类容器</text>                        
+        </view>  
+      </view>      
+      <view class="content_switching clearFix" bindtap="toSwiperview">
+        <view class="switching_left"><text class="iconfont icon-qiehuan" style="color:#fff;font-size:70rpx;"></text></view>
+        <view class="switching_right">
+          <text>切换类容器</text>
+          <text class="switching_right_txt">swiper</text>
+        </view>        
+      </view>       
+    </view>
+  </view>
+
+  <!-- 表单 -->
+  <view class="index_form">
+    <view class="title"><text class="iconfont icon-dingwei" style="color:#00BFFF;font-size:30rpx;"></text>
+    <text style="padding-left: 15rpx;box-sizing: border-box;">表单</text></view>
+    <view class="index_content">    
+      <view class="content_switching clearFix" bindtap="toBtnslidView">
+        <view class="switching_left switching_leftForm1"><text class="iconfont icon-bushufabu" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>提交表单</text>
+          <text class="switching_right_txt">form / button </text>
+          <!-- <text>手势表单元素</text>
+          <text class="switching_right_txt">button / slider </text> -->
+        </view>        
+      </view>       
+      <view class="content_switching clearFix" bindtap="toCheckFormView">
+        <view class="switching_left switching_leftForm2"><text class="iconfont icon-xuanze" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>选择表单元素</text>
+          <text class="switching_right_txt">checkbox / picker-view / picker</text>
+        </view>        
+      </view>       
+    </view>
+  </view>
+
+    <!-- 媒体 -->
+  <view class="index_text">
+    <view class="title"><text class="iconfont icon-dingwei" style="color:#00BFFF;font-size:30rpx;"></text>
+    <text style="padding-left: 15rpx;box-sizing: border-box;">媒体</text></view>
+    <view class="index_content">    
+      <view class="content_switching clearFix" bindtap="toTextView">
+        <view class="switching_left switching_leftText1"><text class="iconfont icon-wenbenkuai" style="color:#fff;font-size:100rpx;"></text></view>
+        <view class="switching_right">
+          <text>动画</text>
+          <text class="switching_right_txt">animation</text>
+          <!-- <text class="switching_right_txt">text / icon / progress</text> -->
+        </view>        
+      </view>       
+      <view class="content_switching clearFix" bindtap="toAudioPicture">
+        <view class="switching_left switching_leftText2"><text class="iconfont icon-ic_image" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>音频与图片</text>
+          <text class="switching_right_txt">audio / video / camera / image</text>
+        </view>        
+      </view>       
+    </view>
+  </view>
+
+     <!-- 其他 -->
+  <view class="index_other">
+    <view class="title"><text class="iconfont icon-dingwei" style="color:#00BFFF;font-size:30rpx;"></text>
+    <text style="padding-left: 15rpx;box-sizing: border-box;">其他</text></view>
+    <view class="index_content">   
+     <view class="content_switching clearFix" bindtap="toCanvasView">
+        <view class="switching_left switching_leftOther0"><text class="iconfont icon-iconset0395" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>画布</text>
+          <text class="switching_right_txt">canvas</text>
+        </view>        
+      </view>        
+      <view class="content_switching clearFix" bindtap="toMapView">
+        <view class="switching_left switching_leftOther1"><text class="iconfont icon-ditu" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>地图</text>
+          <text class="switching_right_txt">map</text>
+        </view>        
+      </view>       
+      <view class="content_switching clearFix" bindtap="toExtendView">
+        <view class="switching_left switching_leftOther2"><text class="iconfont icon-quanbuxiangmu" style="color:#fff;font-size:80rpx;"></text></view>
+        <view class="switching_right">
+          <text>扩展API</text>
+          
+        </view>        
+      </view>       
+    </view>
+  </view>
+
+
+ 
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

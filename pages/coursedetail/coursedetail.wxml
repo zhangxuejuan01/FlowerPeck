@@ -1,0 +1,59 @@
+
+    <view class='course-content'>
+      <view class='course-banner'>
+        <image class='img' src='{{detial.pic}}'></image>
+      </view>
+      <view class='content'>
+        <view class='content-top'>
+           <view class='content-title'>
+            <view class='title-inner clearfix'>
+                <view class="title-introduce  {{activeTitleId == 1 ? 'title_active' : ''}}" bindtap='titleClick' data-id='1'>介绍</view>
+                <view class="title-catalog  {{activeTitleId == 2 ? 'title_active' : ''}}" bindtap='titleClick' data-id='2'>目录</view>
+            </view>
+          </view>
+        </view>
+       
+        <!-- 介绍 -->
+        <view class='introduce' wx:if="{{ activeTitleId == 1 }}">
+          <view class='introduce-top'>
+            <view class='introduce-name'>{{detial.name}}</view>
+            <view class='introduce-num'>{{detial.num}}在学习</view>
+            <view class='introduce-price info-free' wx-if="{{detial.price == 0 }}">免费</view>
+            <view class='introduce-price' wx-if="{{detial.price != 0 }}">￥{{detial.price}}</view>
+          </view>
+
+          <view class='introduce-course'>
+            <view class='course-title'>课程介绍</view>
+            <view class='course-detail'>{{detial.introduce}}</view>
+          </view>
+        </view>
+
+
+
+         <!-- 目录 -->
+        <view class='catalog' wx:if="{{ activeTitleId == 2 }}">
+           <block wx:for="{{ detial.catalog }}">
+             <view class='catalog-item'>0{{item.id}}、{{item.name}}</view>
+        </block>
+        </view>
+
+
+        <view class='blank'></view>
+        <view class='bottom' >
+          <view class='b-l'>
+            <button class='touch-kf' open-type='contact'>
+              <text class='iconfont icon-headphones-outline'></text>
+              <text class='b-sy'>咨询</text>
+            </button>
+          </view>
+
+         <view  class='b-r' bindtap="toStudy" style='background-color:{{ themeColor }};'>
+           <text>去学习</text>
+         </view>
+        
+        </view>
+
+
+        
+      </view>
+    </view>

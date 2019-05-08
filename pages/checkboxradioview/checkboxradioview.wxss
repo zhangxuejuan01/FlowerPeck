@@ -1,0 +1,49 @@
+.section_title{
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f1f1f1;
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.section_content{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.checkbox{
+  width: 710rpx;
+}
+.checkbox label{
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.checkbox checkbox{
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.checkbox2 label{
+  padding: 10rpx 30rpx 0 0;
+  box-sizing: border-box;
+}
+.checkbox2 checkbox{
+  padding-left:10rpx;
+  box-sizing: border-box;
+}
+.radio label{
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.radio radio{
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.radio2 label{
+  padding: 10rpx 30rpx 0 0;
+  box-sizing: border-box;
+}
+.radio2 radio{
+  padding-left:10rpx;
+  box-sizing: border-box;
+}

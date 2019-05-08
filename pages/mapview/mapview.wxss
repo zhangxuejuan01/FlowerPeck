@@ -1,0 +1,42 @@
+/* pages/mapview/mapview.wxss */
+.info-act{
+  padding: 30rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.act-hr{
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.info-left{
+  flex:1;
+  display: flex;
+  flex-flow: column;
+  margin-left: 20rpx;
+}
+.info-left input{
+  color: #333333;
+}
+.info-input{
+  color:#333333;
+}
+.info-img{
+  font-size: 40rpx;
+  line-height: 40rpx;
+  color:#666666;
+}
+.info-show{
+  margin-top: 30rpx;
+  color: #008080;
+  font-size: 30rpx;
+  padding: 30rpx 20rpx;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+}
+
+.show-right{
+  margin-left: 20rpx;
+}

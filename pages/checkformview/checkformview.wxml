@@ -1,0 +1,6 @@
+<view class="container">
+  <view class='header'><text class='txt'>选择类</text></view>
+  <view class='iitem clearFix' bindtap="toCheckboxRadioView">checkbox && radio<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+    <view class='iitem clearFix' bindtap="toPickerViewView">嵌入页面的滚动选择器 picker-view<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+    <view class='iitem clearFix' bindtap="toPickerView">从底部弹起的滚动选择器 picker <text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+</view>

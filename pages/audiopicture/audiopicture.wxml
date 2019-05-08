@@ -1,0 +1,7 @@
+<view class="container">
+  <view class='header'><text class='txt'>音频与图片类</text></view>
+  <view class='iitem clearFix' bindtap="toAudioView">audio<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+    <view class='iitem clearFix' bindtap="toVideoView">video<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+    <view class='iitem clearFix' bindtap="toCameraView">camera<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+     <view class='iitem clearFix' bindtap="toImageView">image<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+</view>

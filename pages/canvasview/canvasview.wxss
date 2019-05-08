@@ -1,0 +1,42 @@
+/* pages/canvasview/canvasview.wxss */
+.contains {
+    background: #4752e8;
+    height: 100vh;
+}
+.qrcode-content {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 13vh;
+    height: 87vh;
+    background: #fff;
+    border-radius: 25rpx 25rpx 0 0; 
+    text-align: center;
+    padding-top: 70rpx;
+}
+.canvas{
+  width: 554rpx;
+  height: 764rpx;
+  background-color: #fff;
+  margin: 0 auto;
+/* 让画布在屏幕外，不要在视野内，不然会出现闪一下的情况，感觉是先看到画布了然后被image组件覆盖 */
+  left: -1000rpx;
+}
+
+.shareimg{
+  width: 554rpx;
+  height: 764rpx;
+  margin: 0 auto;
+}
+.share-btn {
+    position: absolute;
+    width: 454rpx;
+    height: 75rpx;
+    line-height: 75rpx;
+    left: 50%;
+    bottom: 155rpx;
+    transform: translateX(-50%);
+    background: -webkit-linear-gradient(left, #4752e8 , #622afe) !important;
+    color: #fff !important;
+    font-size: 30rpx;
+}

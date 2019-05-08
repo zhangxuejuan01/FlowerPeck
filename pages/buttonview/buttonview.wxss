@@ -1,0 +1,25 @@
+.btn_item{
+  width: 730rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  margin: 10rpx auto;
+  border-radius: 5rpx;
+}
+.btn_inner{
+  width: 500rpx;
+  height: 60rpx;
+  margin: 10rpx auto;
+  font-size: 24rpx;
+  line-height: 60rpx;
+}
+.userInfo_img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.userInfo_txt{
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}

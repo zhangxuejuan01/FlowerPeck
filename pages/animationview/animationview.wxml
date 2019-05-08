@@ -1,0 +1,36 @@
+<!--pages/animationview/animationview.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+
+      <view class="animation-element-wrapper">
+        <view class="animation-element" animation="{{animation}}"></view>
+      </view>
+      <view class="animation-buttons" scroll-y="true">
+        <button class="animation-button" bindtap="rotate">旋转</button>
+        <button class="animation-button" bindtap="scale">缩放</button>
+        <button class="animation-button" bindtap="translate">移动</button>
+        <button class="animation-button" bindtap="skew">倾斜</button>
+        <button class="animation-button" bindtap="rotateAndScale">旋转并缩放</button>
+        <button class="animation-button" bindtap="rotateThenScale">旋转后缩放</button>
+        <button class="animation-button" bindtap="all">同时展示全部</button>
+        <button class="animation-button" bindtap="allInQueue">顺序展示全部</button>
+        <button class="animation-button animation-button-reset" bindtap="reset">还原</button>
+      </view>
+    </view>
+  </view>
+
+  
+  <!-- 分享功能 -->
+  <text class='share-line'>分享功能</text>
+  <view class="share-view">
+  <image class="cover-9" src="{{img}}" bindtap="img"></image>
+  <view class="window-1">
+    <button type="default" class='share-btn' id="open" bindtap="showShareMenu">开启分享（右上角）</button>
+    <button type="warn" class='share-btn' id="close" bindtap="hideShareMenu">关闭分享（右上角）</button>
+  </view>
+  <button type="primary" open-type="share" data-name="pageShare" id="share">点击分享</button>
+</view>
+
+</view>
+

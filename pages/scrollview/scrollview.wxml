@@ -1,0 +1,54 @@
+<view class="container">
+  <scroll-view class="bigWrap" scroll-y="true" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}"   bindscroll="scroll" scroll-with-animation="true" bindscrolltolower= "scrolltolower"  style="height: 100vh;">
+    <view class="index_swiper">
+    <swiper class="swiperImages" indicator-dots="true" autoplay="true" interval="3000" duration="1000">    
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>    
+  
+  <view class='classification'>
+    <view class="classification_item item_luck" bindtap="toNav" data-id="luck">
+      <text class="iconfont icon-favorite" style="color:#DAA520;font-size:80rpx;"></text>
+      <text>幸运抽奖</text>
+    </view>
+      <view class="classification_item item_miao" bindtap="toNav" data-id="miao">
+      <text class="iconfont icon-yushouxiangmu" style="color:#00BFFF;font-size:80rpx;"></text>
+      <text>秒杀团</text>
+    </view>
+      <view class="classification_item item_super" bindtap="toNav" data-id="super">
+      <text class="iconfont icon-globe-outline" style="color:#FF4500;font-size:80rpx;"></text>
+      <text>超级团</text>
+    </view>
+      <view class="classification_item item_tao" bindtap="toNav" data-id="tao">
+      <text class="iconfont icon-bushufabu" style="color:#9400D3;font-size:80rpx;"></text>
+      <text>海淘团</text>
+    </view>
+  </view>
+  
+  <view class='content'>
+    <view class='luck_bg content_item' id="luck">
+    <image src='../images/luck.jpg'></image>
+    </view>
+    <view class='miao_bg content_item' id="miao"> 
+      <image src='../images/miao.jpg'></image>
+    </view>
+    <view class='super_bg content_item' id="super">
+      <image src='../images/super.jpg'></image>
+    </view>
+    <view class='tao_bg content_item' id="tao">
+      <image src='../images/tao.jpg'></image>
+    </view>
+  </view>
+
+   <view class="com-widget-goTop"  bindtap="goTop" wx:if="{{floorstatus}}">
+        <view class="icon-gotop">
+          <text class="iconfont icon-arrowup" style="color:#fff;font-size:40rpx;"></text>
+            顶部
+        </view>
+   </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,114 @@
+<view class='container'> 
+<view class='swiper-tab'>
+  <view class='swiper-tab-item'>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">热点</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">视频</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">问答</view>
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">社区</view>
+    <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">活动</view>
+    <view class="swiper-tab-list {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap="swichNav">奖励</view>
+    <view class="swiper-tab-list {{currentTab==7 ? 'on' : ''}}" data-current="7" bindtap="swichNav">签到</view>
+    <view class="swiper-tab-list {{currentTab==8 ? 'on' : ''}}" data-current="8" bindtap="swichNav">关于</view>
+  </view>
+</view>
+
+<!-- 注意：因为swiper是不能自适应高度的的，所以要用到scroll-view，并且要为scroll-view设置动态计算的高度height:93%，不能设置为height:100%，否则在真机上下拉到底部会有小部分内容被当住了看不到，即设置scroll-view{width: 100%;height: 93%;} -->
+  <swiper current="{{currentTab}}" class="swiper-box"  duration="300"  bindchange="bindChange">
+     <swiper-item>
+       <scroll-view scroll-y="true">
+        <view class='recommend'>
+          <view class='recommend_item recommend_singular'>1-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>2-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>3-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>4-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>5-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>6-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>7-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>8-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>9-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>10-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>11-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>12-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>13-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>14-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>15-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>16-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>17-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>18-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>19-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>20-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>21-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>22-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>23-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>24-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>25-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>26-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>27-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>28-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>29-推荐项目类表</view>
+          <view class='recommend_item recommend_complex'>30-推荐项目类表</view>
+          <view class='recommend_item recommend_singular'>31-推荐项目类表</view>
+        </view>
+       </scroll-view>
+    </swiper-item>
+      
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        热点
+      </scroll-view>
+    </swiper-item>
+
+      <swiper-item>   
+         <scroll-view scroll-y="true">
+            <view class="index_swiper">
+              <swiper class="swiperImages" indicator-dots="true" interval="3000" duration="1000">    
+                <block wx:for="{{imgUrls}}">
+                  <swiper-item>
+                    <image src="{{item}}" class="slide-image" />
+                  </swiper-item>
+                </block>
+              </swiper>
+             </view>     
+         </scroll-view>  
+          
+      </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        问答
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        社区
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        活动
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        奖励
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        签到
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        关于
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+</view>

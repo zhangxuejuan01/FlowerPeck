@@ -1,0 +1,13 @@
+.picker_view{
+  width: 750rpx;
+  height: 300rpx;
+  margin-top: 30epx;
+  padding: 20rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.choice{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}

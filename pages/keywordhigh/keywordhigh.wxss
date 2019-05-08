@@ -1,0 +1,28 @@
+.view-search {
+  padding: 12rpx 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.view-search-input {
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 0px 70rpx 0px 20rpx;
+  font-size: 32rpx;
+}
+.searchHigh {
+  color: #ff0000;
+}
+.oneText {
+    line-height: 50rpx;
+    margin: 15;
+    text-align: left;
+    color: #9B9B9B;
+    font-size: 32rpx;
+    text-indent:1rem;
+}
+.currentText {
+    color: #0099FF;
+}

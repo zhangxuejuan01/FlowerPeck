@@ -1,0 +1,8 @@
+<!--pages/imageview/imageview.wxml-->
+<view class='container'>
+  <view class='choosePic' bindtap="choosePic">选择图片</view>
+  <view class='previewImage'>点击图片即可预览图片哦</view>
+  <block wx:for="{{pics}}" wx:if="{{ pics.length > 0 }}">
+    <image data-id ='{{item}}' class='img' src='{{item}}'  mode="widthFix" bindtap="previewImage"></image>
+  </block>
+</view>

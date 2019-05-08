@@ -1,0 +1,13 @@
+<view class="section">
+    <view class="view-search">
+        <input class="view-search-input" value="{{keyName}}" placeholder="输入搜索关键词" bindinput="bindInput" maxlength="11" />
+    </view>
+      <view wx:for="{{listDataCopy}}" wx:key="*this" style='border:1rpx solid #FAFAFA;'>
+            <view class='oneText'>
+                  <text wx:for="{{item.fund_name}}" wx:key="{{index}}" class="{{item == keyName ? 'searchHigh' : '' }}">{{item}}</text>
+            </view>
+            <view class='oneText'>
+            <text wx:for="{{item.fund_id}}" wx:key="{{index}}" class="{{item == keyName ? 'searchHigh' : '' }}">{{item}}</text>
+            </view>
+      </view>
+</view>

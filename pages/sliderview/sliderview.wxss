@@ -1,0 +1,5 @@
+.section_gap{
+  width: 730rpx;
+  margin: 10rpx auto;
+  font-size: 28rpx;
+}

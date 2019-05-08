@@ -1,0 +1,159 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.2",
+	"appid": "wx279eb9889273d3bb",
+	"projectname": "miniProgram-test",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 17,
+			"list": [
+				{
+					"id": -1,
+					"name": "view类容器",
+					"pathName": "pages/classview/classview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "scrollview类容器",
+					"pathName": "pages/scrollview/scrollview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "swiperview切换类容器",
+					"pathName": "pages/swiperview/swiperview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手势表单",
+					"pathName": "pages/btnslidview/btnslidview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手势表单-button按钮",
+					"pathName": "pages/buttonview/buttonview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手势表单-slider滑动条",
+					"pathName": "pages/sliderview/sliderview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "checkbox-radio",
+					"pathName": "pages/checkboxradioview/checkboxradioview",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "picker-view嵌入页面的滚动选择器",
+					"pathName": "pages/pickerviewview/pickerviewview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "picker-从底部弹起的滚动选择器",
+					"pathName": "pages/pickerview/pickerview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文本",
+					"pathName": "pages/textview/textview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "音频与图片",
+					"pathName": "pages/audioview/audioview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "楼层导航",
+					"pathName": "pages/floornavigation/floornavigation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "音频与图片",
+					"pathName": "pages/audiopicture/audiopicture",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "view类容器--数据渲染",
+					"pathName": "pages/classview/classview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/mapview/mapview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "image",
+					"pathName": "pages/imageview/imageview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品详情页",
+					"pathName": "pages/prodetails/prodetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "产品详情页",
+					"pathName": "pages/prodetails/prodetails",
+					"query": "good_id=122843",
+					"scene": null
+				}
+			]
+		}
+	}
+}

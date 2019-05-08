@@ -1,0 +1,81 @@
+page{
+  height: 100%;
+}
+.container{
+  height: 100%;
+}
+.swiper-tab{
+ width: 100%;
+}
+.swiper-tab-item{
+ width: 100%;
+ text-align: center;
+ height: 80rpx;
+ line-height: 80rpx;
+ white-space: nowrap;
+ overflow-x: auto;
+ overflow-y: hidden;
+}
+/*隐藏tab顶部导航的滚动条*/
+ .swiper-tab-item::-webkit-scrollbar {
+  display: none;
+}
+.swiper-tab-list{
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx; 
+  color: #333;
+  padding: 0 30rpx;  
+  font-size: 30rpx;
+  width: auto;
+} 
+.on{
+ color: #da7c0c;
+ border-bottom: 5rpx solid #da7c0c;
+}
+.swiper-box{
+ display: block;
+ height: 100%;
+ width: 100%;
+ overflow: hidden;
+}
+/*给scroll-view设置动态高度*/
+scroll-view{
+  width: 100%;
+  height: 93%;/*设置动态高度,不要设置100%，不然滑到底部会有小部分内容被挡住*/
+}
+/*隐藏内容swiper的scroll-view的滚动条*/
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/*推荐*/
+.recommend_item{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #4c4c4c;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+}
+.recommend_singular{
+  background: #f1f1f1;
+}
+.recommend_complex{
+  background: #fff;
+}
+.index_swiper{
+  width: 750rpx;
+  height: 500rpx;
+}
+.index_swiper .swiperImages{
+  width: 750rpx;
+  height: 500rpx;
+}
+.index_swiper .swiperImages image{
+  width: 750rpx;
+  height: 500rpx;
+}

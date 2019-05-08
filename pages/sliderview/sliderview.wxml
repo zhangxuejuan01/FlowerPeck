@@ -1,0 +1,32 @@
+<view class="container">  
+<view class="section section_gap">
+    <text class="section__title">slider2change不显示当前value</text>
+    <view class="body-view"><slider bindchange="slider2change" step="5" /></view>
+  </view>
+
+  <view class="section section_gap">
+    <text class="section__title">slider3change显示当前value</text>
+    <view class="body-view">
+      <slider bindchange="slider3change" show-value />
+    </view>
+  </view>
+
+  <view class="section section_gap">
+    <text class="section__title">slider4change设置step</text>
+    <view class="body-view"><slider bindchange="slider4change" step="5" show-value /></view>
+  </view>
+
+  <view class="section section_gap">
+    <text class="section__title">slider5change设置最小/最大值</text>
+    <view class="body-view">
+      <slider bindchange="slider5change" min="50" max="200" show-value />
+    </view>
+  </view>
+
+  <view class="section section_gap">
+    <text class="section__title">slider6change设置默认值</text>
+    <view class="body-view">
+      <slider bindchange="slider6change" value="80"  show-value />
+    </view>
+  </view>
+</view>

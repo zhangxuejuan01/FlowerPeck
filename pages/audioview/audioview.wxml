@@ -1,0 +1,28 @@
+<view class='content'>
+    <audio
+    poster="{{poster}}"
+    name="{{name}}"
+    author="{{author}}"
+    src="{{src}}"
+    id="myAudio"
+    controls
+    loop
+  ></audio>
+
+  <button class='btn'  bindtap="audioPlay">播放</button>
+  <button class='btn'  bindtap="audioPause">暂停</button>
+  <button class='btn'  bindtap="audio14">设置当前播放时间为14秒</button>
+  <button class='btn'  bindtap="audioStart">回到开头</button>
+
+
+  <view class="tui-content">
+  <view class="tui-show-name">
+    <button class="tui-card-btn" bindtap="openActionsheet">打开actionsheet</button>
+  </view>
+</view>
+<view class="tui-fixed-foot">
+  <text class="tui-fl tui-fl-item" bindtap="openActionsheetDe">DELETE</text>
+  <text class="tui-fr tui-fl-item" bindtap="openActionsheetSh">SHARE</text>
+</view>
+
+</view>

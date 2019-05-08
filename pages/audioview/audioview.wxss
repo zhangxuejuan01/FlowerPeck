@@ -1,0 +1,36 @@
+.content{
+  width: 750rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.btn{
+  margin-top: 20rpx;
+  background: #800000;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+}
+
+.tui-content{
+  margin-top: 100rpx;
+}
+.tui-card-btn{
+  background: #4B0082;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+}
+.tui-fixed-foot{
+  margin-top: 30rpx;
+}
+.tui-fl-item{
+  margin-left: 30rpx;
+  display: inline-block;
+  width: 300rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  background: red;
+}

@@ -1,0 +1,5 @@
+<view class="container">
+  <view class='header'><text class='txt'>手势类</text></view>
+  <view class='iitem clearFix' bindtap="toButtonView">按钮button（官方）<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+   <view class='iitem clearFix' bindtap="toSliderView">滑动条 slider<text class="iconfont icon-youjiantou" style="color:#666;font-size:40rpx;"></text></view>
+</view>
